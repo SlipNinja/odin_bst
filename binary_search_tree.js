@@ -288,7 +288,8 @@ export class Tree{
     }
 
     rebalance(){
-
+        let values = this.inOrder().sort((a, b) => a-b);
+        this.root = this.buildTree(values);
     }
 
     print(node = this.root, prefix = "", isLeft = true) {

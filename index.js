@@ -35,3 +35,9 @@ console.log("Height from node '7' : " + tree.height(tree.find(7)));
 console.log("Depth to node '7' : " + tree.depth(tree.find(7)));
 
 console.log(tree.isBalanced() ? "Tree is balanced" : "Tree is not balanced");
+
+tree.rebalance();
+tree.print();
+
+console.log(tree.isBalanced() ? "Tree is balanced" : "Tree is not balanced");
+
